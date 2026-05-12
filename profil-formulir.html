@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi Saya</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .profil-saya {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+            text-align: center;
+    
+        }
+
+        p {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .foto-profil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        form {
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .aktivitas-flex {
+            display: flex;
+            gap: 40px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="profil-saya" id="halamanUtama" title="Halaman Profil">
+
+    <header>
+        <h1>Profil Pribadi Saya</h1>
+        <img src="foto_saya.jpeg" alt="Foto Profil" width="150" height="150" class="foto-profil">
+    </header>
+
+    <section>
+        <p>Nama Lengkap :<strong> Firdah Syari</strong>.</p>
+        <p>NIM : <strong>246250028</strong>.</p>
+        <p>Holaa, saya merupakan mahasiswa dari kampus UIN Datokarama Palu yang sedang menempuh pendidikan semester 4 pada prodi Informatika.</p>
+    </section>
+
+    <section>
+        <h2>Biodata</h2>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td>Firdah Syari</td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir</th>
+                <td>16 Februari 2007</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>Jl. Kimaja</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>firdasari616373@gmail.com</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="aktivitas-flex">
+
+        <section>
+            
+            <h2>Aktivitas Favorit</h2>
+            <h3>Hobi Saya:</h3>
+            <ul>
+                <li>Menulis</li>
+                <li>Menyanyi</li>
+                <li>Mendesain di Canva</li>
+            </ul>
+
+            <h3>Saya mempunyai minat untuk kedepannya:</h3>
+            <ol>
+                <li>Menjadi seorang wartawan</li>
+                <li>Menjadi desain grafis</li>
+                <li>Menjadi penulis </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Formulir</h2>
+            <form action="#" method="post">
+
+                <label>Nama Lengkap:</label><br>
+                <input type="text" name="nama"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email"><br><br>
+
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                <input type="radio" name="jk" value="Perempuan"> Perempuan
+                <br><br>
+
+                <label>Hobi:</label><br>
+                <input type="checkbox" name="hobi" value="Menulis"> Menulis
+                <input type="checkbox" name="hobi" value="Tidur"> Healing
+                <input type="checkbox" name="hobi" value="Musik"> Mendengarkan musik
+                <br><br>
+
+                <button type="submit">Kirim Data</button>
+            </form>
+        </section>
+
+    </div>
+
+</div>
+
+</body>
+</html>
